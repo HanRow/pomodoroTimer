@@ -99,7 +99,7 @@ const timer = {
     sec.textContent = seconds;
 
     const text = timer.mode === 'pomodoro' ? 'Get back to work!' : 'Take a break';
-    document.title = '${minutes}:${seconds} - ${text}';
+    document.title = 'Pomodoro Study Timer';
 
     const progress = document.getElementById('js-progress');
     progress.value = timer[timer.mode] * 60 - timer.remainingTime.total;
